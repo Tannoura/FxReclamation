@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="716.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ReponseFXMLController">
+   <children>
+      <TextArea fx:id="idRep" layoutX="168.0" layoutY="188.0" prefHeight="52.0" prefWidth="208.0" />
+      <TextArea fx:id="dateRep" layoutX="168.0" layoutY="399.0" prefHeight="52.0" prefWidth="208.0" />
+      <ComboBox fx:id="comboRec" layoutX="168.0" layoutY="292.0" prefHeight="52.0" prefWidth="208.0" />
+      <Button fx:id="ajouterRep" layoutX="272.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#addRep" text="Ajouter" />
+      <Button fx:id="SupprimerRep" layoutX="455.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#deleteRep" text="Supprimer" />
+      <Button fx:id="modifierRep" layoutX="616.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#updateRep" text="Modifier" />
+      <Button fx:id="fermerRep" layoutX="38.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#close" text="Fermer" />
+      <Text layoutX="38.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Reclamation" />
+      <Text layoutX="38.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Resolution" />
+      <ListView fx:id="listViewRep" layoutX="434.0" layoutY="82.0" onMouseClicked="#selectListRep" prefHeight="491.0" prefWidth="627.0" />
+      <ComboBox fx:id="resou_comb" layoutX="172.0" layoutY="496.0" prefHeight="45.0" prefWidth="163.0" />
+      <TextArea fx:id="rechtxt" layoutX="714.0" layoutY="23.0" prefHeight="39.0" prefWidth="187.0" />
+      <Text layoutX="603.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche" />
+      <Button fx:id="recherchebtn" layoutX="996.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#recherchersignal" text="rechercher" />
+      <Button fx:id="tribtn" layoutX="105.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#trisignal" text="Trier" />
+   </children>
+</AnchorPane>
